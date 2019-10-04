@@ -18,8 +18,6 @@ class ProductIndexPage extends Component {
                             <br />
                             <small>{product.seller.full_name}</small>
                         </p>
-
-
                     </li>
                 ))}
             </div>

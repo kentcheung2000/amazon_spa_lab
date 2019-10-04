@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
-import ProductDetails from "./ProductDetails"
-import ReviewDetails from "./ReviewDetails"
-import product from "./ReviewListData"
+import ReviewList from "./ReviewList"
 import ProductShowPageData from "../data/ProductShowPageData"
 
 class ProductShowPage extends Component {
@@ -10,19 +8,41 @@ class ProductShowPage extends Component {
             <div>
                 <h1>Product Show Page</h1>
 
-                {ProductShowPageData.map((product, index) => (
+                {ProductShowPageData.title}
+                <br />
+                {ProductShowPageData.description}
+                <br />
+                {ProductShowPageData.price}
+                <br />
+
+                {ProductShowPageData.reviews.map((review, index) => (
                     <li key={index}>
                         <p>
-                            {product.title}
+                            {review.rating}
                             <br />
-                            {product.price}
+                            {review.body}
                             <br />
-                            <small>{product.seller.full_name}</small>
+                            <small>{review.reviewer.full_name}</small>
                         </p>
-
-
                     </li>
                 ))}
+
+                {ProductShowPageData.tags.map((tag, index) => (
+                    <li key={index}>
+                        <p>
+                            {tag.name}
+                            <br />
+
+                        </p>
+                    </li>
+                ))}
+
+
+
+
+
+                {/* <ReviewList reviews={ProductShowPageData.reviews} /> */}
+
             </div>
         )
     }
