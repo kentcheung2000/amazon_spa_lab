@@ -9,16 +9,22 @@ class ProductIndexPage extends Component {
             <div>
                 <h1>Product Index Page</h1>
 
-                <ProductDetails
-                    title={ProductIndexPageData[0].title}
-                />
+                {ProductIndexPageData.map((product, index) => (
+                    <li key={index}>
+                        <p>
+                            {product.title}
+                            <br />
+                            {product.price}
+                            <br />
+                            <small>{product.seller.full_name}</small>
+                        </p>
 
+
+                    </li>
+                ))}
             </div>
-
         )
-
     }
-
 }
 
 
