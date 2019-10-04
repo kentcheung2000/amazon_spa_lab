@@ -15,7 +15,7 @@ class ProductShowPage extends Component {
                 {ProductShowPageData.price}
                 <br />
 
-                {ProductShowPageData.reviews.map((review, index) => (
+                {/* {ProductShowPageData.reviews.map((review, index) => (
                     <li key={index}>
                         <p>
                             {review.rating}
@@ -35,13 +35,13 @@ class ProductShowPage extends Component {
 
                         </p>
                     </li>
-                ))}
+                ))} */}
 
 
 
+                <h3>Reviews</h3>
 
-
-                {/* <ReviewList reviews={ProductShowPageData.reviews} /> */}
+                <ReviewList reviews={ProductShowPageData.reviews} />
 
             </div>
         )
