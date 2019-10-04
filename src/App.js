@@ -1,5 +1,5 @@
 import React from 'react';
-import ProductShowPage from "./components/ProductShowPage"
+import ProductIndexPage from "./components/ProductIndexPage"
 
 import './App.css';
 
@@ -7,7 +7,7 @@ function App() {
   return (
     <div className="ui container">
 
-      <ProductShowPage />
+      <ProductIndexPage />
 
     </div>
   );
