@@ -8,8 +8,8 @@ function App() {
   return (
     <div className="ui container">
 
-      {/* <ProductIndexPage /> */}
-      <ProductShowPage />
+      <ProductIndexPage />
+      {/* <ProductShowPage /> */}
 
 
     </div>

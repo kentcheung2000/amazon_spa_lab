@@ -6,10 +6,7 @@ function ReviewList(props) {
     console.log("This is props: ", props);
 
     return (
-
-
         <ul>
-
             {props.reviews.map((review) => (
                 <li key={review.id}>
                     <ReviewDetails
@@ -18,12 +15,6 @@ function ReviewList(props) {
                         reviewer={review.reviewer.full_name}
 
                     />
-
-
-
-
-
-
 
                 </li>
 
@@ -38,3 +29,4 @@ function ReviewList(props) {
 
 }
 export default ReviewList;
+
